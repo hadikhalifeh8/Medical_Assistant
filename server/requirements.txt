@@ -1,0 +1,37 @@
+# Web Framework
+fastapi
+uvicorn[standard]
+python-multipart  # for file uploads
+
+# LangChain & Ecosystem (pinned to versions compatible with the project code)
+# These versions are known to work with the current imports and extensions
+langchain==0.3.27
+langchain-core==0.3.80
+langchain-groq==0.3.8
+groq==0.36.0
+langchain-google-genai==2.0.4
+langchain-huggingface==0.3.1
+
+# Vectorstore
+# Use the official Pinecone package
+pinecone
+
+# Embeddings / Models
+sentence-transformers
+
+# PDF Parsing
+PyPDF
+
+# Environment Variables
+python-dotenv
+
+# Typing & Utilities
+pydantic
+requests
+tqdm
+
+# Logging (optional but recommended)
+loguru
+
+# Install with:
+# pip install -r server/requirements.txt
