@@ -6,7 +6,7 @@ python-multipart  # for file uploads
 # LangChain & Ecosystem (pinned to versions compatible with the project code)
 # These versions are known to work with the current imports and extensions
 langchain==0.3.27
-langchain-core==0.3.27
+langchain-core>=0.3.72,<1.0.0
 langchain-community==0.3.27
 langchain-groq==0.3.8
 groq==0.36.0
