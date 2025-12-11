@@ -2,9 +2,8 @@ fastapi
 uvicorn[standard]
 python-multipart
 
-# LangChain - all versions aligned
+# LangChain - valid matching set
 langchain==0.3.12
-langchain-core==0.3.12
 langchain-community==0.3.12
 langchain-groq==0.3.8
 langchain-google-genai==2.0.4
