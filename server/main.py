@@ -25,3 +25,8 @@ app.middleware("http")(catch_exception_middleware)
 app.include_router(upload_pdfs_router)
 # 2- asking query
 app.include_router(ask_question_router)
+
+
+@app.get("/")
+def home():
+    return {"status": "ok", "message": "API is running"}
