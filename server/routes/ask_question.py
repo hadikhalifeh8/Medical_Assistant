@@ -41,8 +41,8 @@ async def ask_question(question: str = Form(...)):
             )
 
         # Embed model + Pinecone setup
-        pc = Pinecone(api_key=os.environ.get("PINECONE_API_KEY", ""))
-        index = pc.Index(os.environ.get("PINECONE_INDEX_NAME", "medical_index"))
+        pc = Pinecone(api_key=os.environ.get("PINECONE_API_KEY"))
+        index = pc.Index(os.environ.get("PINECONE_INDEX_NAME"))
         embed_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
         # embed_model = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
         embedded_query = embed_model.embed_query(question)
