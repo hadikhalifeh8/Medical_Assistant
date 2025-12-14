@@ -6,6 +6,9 @@ from pydantic import Field
 from typing import List, Optional
 from logger import logger
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Note: Imports for `pinecone`, `langchain` and `langchain_google_genai`
 # are performed inside the endpoint to avoid crashing the app at
