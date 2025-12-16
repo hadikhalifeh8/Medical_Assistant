@@ -22,6 +22,8 @@ sentence-transformers
 
 # PDF Parsing
 PyPDF
+# PyPDF2
+numpy
 
 # Environment Variables
 python-dotenv
