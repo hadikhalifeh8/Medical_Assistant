@@ -17,3 +17,4 @@ async def upload_pdfs(files:List[UploadFile] = File(...)):
     except Exception as e:
         logger.exception("Error during PDF upload")
         return JSONResponse(status_code=500,content={"error":str(e)})
+    # End of upload_pdfs
